@@ -1,0 +1,56 @@
+:root{
+  --bg:#0b0c10;
+  --card:#12141b;
+  --text:#e8eaf0;
+  --muted:#a3a8b8;
+  --line:#232737;
+  --btn:#1b2030;
+  --btn2:#222945;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+.wrap{max-width:980px; margin:0 auto; padding:20px;}
+h1{margin:0 0 6px 0; font-size:22px;}
+h2{margin:0 0 10px 0; font-size:18px;}
+.muted{color:var(--muted)}
+.grid{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:12px 0;}
+@media (max-width: 720px){ .grid{grid-template-columns:1fr;} }
+
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:14px;
+  margin:12px 0;
+}
+
+.label{color:var(--muted); font-size:12px; margin-bottom:6px;}
+.big{font-size:32px; font-weight:700;}
+.row{display:flex; align-items:center; justify-content:space-between; gap:12px;}
+.btn{
+  background:var(--btn);
+  color:var(--text);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:8px 10px;
+  cursor:pointer;
+}
+.btn:hover{background:var(--btn2);}
+.select{
+  background:var(--btn);
+  color:var(--text);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:8px 10px;
+}
+
+.tableWrap{overflow:auto; border-radius:12px; border:1px solid var(--line); margin-top:8px;}
+table{width:100%; border-collapse:collapse; min-width:720px;}
+th, td{padding:10px; border-bottom:1px solid var(--line); text-align:left; font-size:14px;}
+tbody tr:hover{background:rgba(255,255,255,0.03);}
